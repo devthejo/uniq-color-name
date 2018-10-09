@@ -1,0 +1,42 @@
+{
+  "name": "uniq-color-name",
+  "version": "1.0.0",
+  "description": "",
+  "main": "uniqColorName.js",
+  "bin": {
+    "uniq-color-name": "./cli.js"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takion/uniq-color-name.git"
+  },
+  "keywords": [
+    "color",
+    "name",
+    "ntc",
+    "color-names",
+    "phonetic",
+    "unique",
+    "16777216"
+  ],
+  "author": "Jo <jo@redcat.ninja> (https://redcat.ninja)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/takion/uniq-color-name/issues"
+  },
+  "homepage": "https://github.com/takion/uniq-color-name#readme",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "color-name-list": "^3.52.1",
+    "latinize": "^0.4.0",
+    "nearest-color": "^0.4.2",
+    "onecolor": "^3.1.0"
+  },
+  "devDependencies": {
+    "ascii-progress": "^1.0.5",
+    "mocha": "^5.2.0"
+  }
+}
