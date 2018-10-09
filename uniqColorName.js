@@ -1,6 +1,7 @@
 const oneColor = require('onecolor')
 const nearestColor = require('nearest-color')
 const fs = require('fs')
+const path = require('path')
 
 const baseColorList = [
   ['black',    '#000000',  [0,0,0] ],
@@ -16,7 +17,7 @@ const baseColorList = [
 const baseColors = baseColorList.reduce((o, [ name, hex ]) => Object.assign(o, { [name]: hex }), {})
 const nearestBaseColor = nearestColor.from(baseColors)
 
-const firstNames = fs.readFileSync('./first-names.txt').toString().split("\n")
+const firstNames = fs.readFileSync(path.join(__dirname,'first-names.txt')).toString().split("\n")
 
 function uniqColorName(colorArg){
   const colorHex = oneColor(colorArg).hex()
