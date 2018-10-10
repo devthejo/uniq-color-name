@@ -1,4 +1,4 @@
-#! /usr/bin/env node
+#!/usr/bin/env node
 const oneColor = require('onecolor')
 const chalk = require('chalk')
 const nearestColor = require('nearest-color')
